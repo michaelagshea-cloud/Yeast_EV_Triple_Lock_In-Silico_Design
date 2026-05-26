@@ -1,0 +1,5 @@
+gene,systematic_name,sgdid,chromosome,reference_accession,coordinates,strand,role,status
+ISC1,YER019W,S000000821,V,BK006939.2,192797-194230,+,Source for ISC1 aa56-477 catalytic-domain payload,canonical_reference
+OCH1,YGL038C,S000003006,VII,BK006941.2,425362-426804,-,Target locus for OCH1-anchor ISC1alpha donor,canonical_reference
+MNN2,YBR015C,S000000219,II,BK006936.2,267710-269503,-,Target locus for MNN2-anchor ISC1beta donor,canonical_reference
+MNN5,YJL186W,S000003722,X,BK006943.2,80155-81915,+,Target locus for MNN5-anchor ISC1gamma donor,canonical_reference
