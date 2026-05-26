@@ -1,0 +1,46 @@
+name: Reproducibility QC
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  reproducibility-qc:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r 09_reproducible_pipeline/requirements.txt
+
+      - name: Rebuild manifest
+        run: |
+          python 09_reproducible_pipeline/rebuild_manifest.py --repo-root .
+
+      - name: Audit sequence inventory
+        run: |
+          python 09_reproducible_pipeline/generate_all_sequences.py --repo-root . --mode audit
+
+      - name: Run sequence QC
+        run: |
+          python 09_reproducible_pipeline/run_sequence_qc.py --repo-root .
+
+      - name: Build visual model documentation
+        run: |
+          python 09_reproducible_pipeline/visualize_design_model.py --repo-root .
+
+      - name: Run tests
+        run: |
+          python -m pytest -q 09_reproducible_pipeline/tests
