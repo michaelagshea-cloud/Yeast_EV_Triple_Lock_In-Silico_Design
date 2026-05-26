@@ -45,7 +45,8 @@ class QCResult:
     record_id: str
     sequence_type: str
     length_observed: int
-    gc_fraction: str
+    length_bp: int
+    gc_fraction: float
     n_count: int
     gap_or_dot_count: int
     sha256: str
@@ -136,22 +137,15 @@ def infer_sequence_type(record: FastaRecord, path: Path) -> str:
     return "unknown"
 
 
-def gc_fraction(seq: str) -> str:
+def gc_fraction(seq: str) -> float:
     clean = [base for base in seq.upper() if base in "ACGTN"]
     denom = sum(1 for base in clean if base in "ACGT")
     if denom == 0:
-        return ""
-    return f"{sum(1 for base in clean if base in 'GC') / denom:.6f}"
+        return 0.0
+    return sum(1 for base in clean if base in "GC") / denom
 
 
 def declared_length_from_header(record: FastaRecord, seq_type: str) -> Tuple[str, str, str]:
-    """
-    Pull declared lengths from headers such as:
-    length=1269bp
-    length=2299
-    length_1434bp
-    length_478aa_including_stop
-    """
     text = f"{record.record_id} {record.description}"
 
     if seq_type == "protein":
@@ -196,16 +190,11 @@ def match_rule(
     constraints: Dict[str, Any],
     seq_type: str,
 ) -> Tuple[str, str, str]:
-    """
-    Match expected design rules only for DNA records.
-    Protein records are translation checks, not donor/payload DNA length checks.
-    """
     if seq_type != "dna":
         return "", "", ""
 
     haystack = f"{path.as_posix()} {record.record_id} {record.description}".lower()
 
-    # Avoid applying payload-only rule to chimera coding-region DNA.
     if "chimera_coding_region" in haystack:
         return "", "", ""
 
@@ -254,18 +243,18 @@ def qc_record(
         alphabet_status = "PASS" if DNA_RE.match(seq or "") else "FAIL"
         n_count = seq.count("N")
         gap_or_dot_count = seq.count("-") + seq.count(".")
-        gc = gc_fraction(seq)
+        gc = round(gc_fraction(seq), 6)
     elif seq_type == "protein":
         alphabet_status = "PASS" if PROTEIN_RE.match(seq or "") else "FAIL"
         n_count = 0
         gap_or_dot_count = seq.count("-") + seq.count(".")
-        gc = ""
+        gc = 0.0
         notes.append("Protein translation record; DNA GC/N-base checks skipped.")
     else:
         alphabet_status = "FAIL"
         n_count = 0
         gap_or_dot_count = seq.count("-") + seq.count(".")
-        gc = ""
+        gc = 0.0
         notes.append("Could not infer DNA or protein sequence type.")
 
     expected_rule, expected_len, expected_unit = declared_length_from_header(record, seq_type)
@@ -278,11 +267,11 @@ def qc_record(
         severity = "fail"
 
     length_status = "NOT_CHECKED"
+    observed = len(seq.replace("-", "").replace(".", ""))
 
     if expected_len:
         try:
             expected_int = int(expected_len)
-            observed = len(seq.replace("-", "").replace(".", ""))
             if observed == expected_int:
                 length_status = "PASS"
             else:
@@ -313,7 +302,8 @@ def qc_record(
         path=rel,
         record_id=record.record_id,
         sequence_type=seq_type,
-        length_observed=len(seq.replace("-", "").replace(".", "")),
+        length_observed=observed,
+        length_bp=observed,
         gc_fraction=gc,
         n_count=n_count,
         gap_or_dot_count=gap_or_dot_count,
@@ -345,7 +335,8 @@ def run_qc(repo_root: Path, constraints_path: Optional[Path] = None) -> List[QCR
                     "PARSE_ERROR",
                     "unknown",
                     0,
-                    "",
+                    0,
+                    0.0,
                     0,
                     0,
                     sha256_file(path),

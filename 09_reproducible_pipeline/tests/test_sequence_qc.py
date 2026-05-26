@@ -7,18 +7,6 @@ sys.path.insert(0, str(PIPELINE))
 from run_sequence_qc import parse_fasta, gc_fraction, run_qc  # noqa: E402
 
 
-def _as_float(value):
-    if value in ("", None):
-        return 0.0
-    return float(value)
-
-
-def _length_value(result):
-    if hasattr(result, "length_bp"):
-        return result.length_bp
-    return result.length_observed
-
-
 def test_parse_fasta_single_record():
     records = parse_fasta(">seq1 description\nACGT\nGGCC\n")
     assert len(records) == 1
@@ -27,8 +15,8 @@ def test_parse_fasta_single_record():
 
 
 def test_gc_fraction_ignores_n():
-    assert _as_float(gc_fraction("GGCCNN")) == 1.0
-    assert _as_float(gc_fraction("AATTNN")) == 0.0
+    assert gc_fraction("GGCCNN") == 1.0
+    assert gc_fraction("AATTNN") == 0.0
 
 
 def test_run_qc_on_tmp_dna_fasta(tmp_path):
@@ -39,7 +27,9 @@ def test_run_qc_on_tmp_dna_fasta(tmp_path):
     results = run_qc(repo)
 
     assert len(results) == 1
-    assert _length_value(results[0]) == 8
+    assert results[0].sequence_type == "dna"
+    assert results[0].length_bp == 8
+    assert results[0].length_observed == 8
     assert results[0].alphabet_status == "PASS"
     assert results[0].qc_status == "PASS"
 
@@ -55,6 +45,8 @@ def test_protein_translation_record_is_not_treated_as_failed_dna(tmp_path):
     results = run_qc(repo)
 
     assert len(results) == 1
-    assert getattr(results[0], "sequence_type", "protein") == "protein"
+    assert results[0].sequence_type == "protein"
+    assert results[0].length_observed == 6
     assert results[0].alphabet_status == "PASS"
     assert results[0].qc_status == "PASS"
+    assert "Protein translation record" in results[0].notes
