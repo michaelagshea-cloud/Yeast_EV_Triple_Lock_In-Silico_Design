@@ -1,0 +1,28 @@
+Final Benchling import notes for three-lock donor cassettes
+
+Use the GenBank files for feature-rich import. Use the FASTA file only if you want sequence-only import.
+
+Record status: computationally validated donor candidates; not experimentally validated.
+Preferred assembly strategy: direct synthesis of each 2,299 bp cassette as a sequence-verified HDR repair template. If plasmid cloning is required, Gibson/HiFi is preferred over Golden Gate because the current donors contain internal restriction sites that could interfere with enzyme-dependent modular assembly.
+
+Feature coordinates in each 2,299 bp donor (1-based):
+- 1-500: 5' homology arm in transcript/synthesis orientation.
+- Retained native anchor is inside the 5' arm and should not be duplicated after the arm.
+  - OCH1 anchor: 366-500, aa1-45.
+  - MNN2 anchor: 378-500, aa1-41.
+  - MNN5 anchor: 366-500, aa1-45.
+- 501-530: (GGGGS)2 linker, GGTGGTGGTGGTTCTGGTGGTGGTGGTTCT.
+- 531-1796: diversified ISC1/YER019W aa56-477 payload coding region.
+- 1797-1799: TAA stop.
+- 1800-2299: 3' homology arm in transcript/synthesis orientation.
+
+Keep two records per construct:
+1. Synthesis sequence: transcript orientation, used for DNA synthesis / Benchling sequence viewing.
+2. Genome mapping: R64-1-1 genomic coordinate orientation, used to verify locus boundaries. OCH1 and MNN2 are minus-strand loci; MNN5 is plus-strand.
+
+Deprecated / excluded branches:
+- LCB3/YJL134W-derived insert branch.
+- YOR019W and SIC1 files.
+- Old 50 bp short-homology lock cassettes.
+- Old full-ORF replacement geometry.
+- GAL1-toggle branch.

@@ -1,0 +1,103 @@
+LOCUS       OCH1_ISC1alpha_5        2299 bp    DNA     linear   SYN 25-MAY-2026
+DEFINITION  OCH1-ISC1alpha 500 bp HDR donor cassette, transcript/synthesis
+            orientation.
+ACCESSION   OCH1_ISC1alpha_500bp_HDR_donor
+VERSION     OCH1_ISC1alpha_500bp_HDR_donor
+KEYWORDS    .
+SOURCE      synthetic DNA construct
+  ORGANISM  Saccharomyces cerevisiae S288C / R64-1-1 synthetic donor candidate
+            .
+FEATURES             Location/Qualifiers
+     source          1..2299
+                     /organism="synthetic DNA construct"
+                     /mol_type="other DNA"
+                     /note="Computational donor candidate for OCH1 / YGL038C
+                     catalytic-domain replacement; not experimentally validated"
+     misc_feature    1..500
+                     /label="5_prime_homology_arm"
+                     /note="500 bp arm ending at retained OCH1 anchor boundary;
+                     genomic mapping ChrVII:426670..427169; transcript/coding
+                     orientation; reverse-complement of genomic plus strand"
+     misc_feature    366..500
+                     /label="retained_native_anchor"
+                     /note="OCH1 aa1-45 retained cis-Golgi anchor; anchor is
+                     part of 5 prime homology arm and should not be duplicated"
+     misc_feature    501..530
+                     /label="(GGGGS)2_linker"
+                     /note="30 bp linker: GGTGGTGGTGGTTCTGGTGGTGGTGGTTCT"
+     CDS             531..1796
+                     /label="ISC1alpha_ISC1_aa56_477_coding_region"
+                     /codon_start=1
+                     /product="ISC1/YER019W catalytic domain aa56-477"
+                     /note="Diversified codon variant alpha encoding
+                     ISC1/YER019W aa56-477; no start codon included in payload;
+                     terminal stop annotated separately"
+     misc_feature    531..1799
+                     /label="ISC1alpha_plus_TAA"
+                     /note="1266 bp diversified ISC1 payload plus TAA stop
+                     codon"
+     terminator      1797..1799
+                     /label="TAA_stop"
+                     /note="single terminal TAA stop codon"
+     CDS             366..1799
+                     /label="full_chimeric_ORF"
+                     /codon_start=1
+                     /product="OCH1 anchor-(GGGGS)2-ISC1alpha chimera"
+                     /translation="MSRKLSHLIATRKSKTIVVTVLLIYSLLTFHLSNKRLLSQFYPSK
+                     GGGGSGGGGSRKERLRAIADKLAGHSMLTPISDELLPNGGDSNENEDYDVIALQEIWCV
+                     EDWKYLASACASKYPYQRLFHSGILTGPGLAILSKVPIESTFLYRFPINGRPSAVFRGD
+                     WYVGKSIAITVLNTGTRPIAIMNSHMHAPYAKQGDAAYLCHRSCQAWDFSRLIKLYRQA
+                     GYAVIVVGDLNSRPGSLPHKFLTQEAGLVDSWEQLHGKQDLAVIARLSPLQQLLKGCTT
+                     CDSLLNTWRAQRQPDEACRLDYALIDPDFLQTVDAGVRFTERIPHLDCSVSDHFAYSCT
+                     LNIVPQGTESRPSTSVKRAKTHDRELILQRYSNYETMIECIHTYLKTAQRQKFFRGLHF
+                     WASILLLIASLVVTTFTANKAGWSSIFWVLFAIAVSISGTIDGAISFLFGRSEIRALIE
+                     VEQEVLDAEHHLQTFLSEK"
+                     /note="Full intended ORF: retained OCH1 anchor + linker +
+                     ISC1/YER019W aa56-477; 477 aa plus terminal stop"
+     misc_feature    1800..2299
+                     /label="3_prime_homology_arm"
+                     /note="500 bp arm starting immediately after native OCH1
+                     stop codon; genomic mapping ChrVII:424862..425361;
+                     transcript/coding orientation; reverse-complement of
+                     genomic plus strand"
+ORIGIN
+        1 taactaacgt ctttacgcct ctctttattc ttttttgggt aaattgctta aactatttgg
+       61 ccggcccacc gcgaaaagat ttggctgggc ctcaactaaa cgcgcctttt tggacttttc
+      121 acgttgcagg gacagcaacg tcaaaacttc tgcattaagg tagtttggta gcttggtagc
+      181 cactttagta tttctgcctt cttcgaatac cgacattatt tctcgccaat ccacattctc
+      241 tctccccatc tgcatccttt tatatttaat agggataggt tgttttagtt ctttgattcc
+      301 gttttcattt caagagcaat aatagcaatt tggaaaaaga aagcaagtaa aagaaagaag
+      361 agatcatgtc taggaagttg tcccacctga tcgctacaag gaaatcaaaa acaatagtcg
+      421 taaccgtact tcttatttat tctttgttga catttcactt gtcaaacaaa aggctgcttt
+      481 ctcagtttta ccctagcaaa ggtggtggtg gttctggtgg tggtggttct agaaaagaaa
+      541 ggttacgtgc tattgccgat aagctcgcag gtcattctat gctgactcca atctcagatg
+      601 aattactccc taatggaggc gacagcaacg agaacgaaga ttatgatgtt atagctctgc
+      661 aagaaatttg gtgtgtcgag gactggaagt acttagcctc tgcatgtgct tcaaaatacc
+      721 cgtatcaaag actctttcat agcggtatcc tgacaggacc aggcttagcc atactctcta
+      781 aggtacctat tgaatcaacc ttcctgtaca ggttcccgat caatggtcgt ccaagcgcag
+      841 tttttagagg agattggtac gtcggcaagt ctatagctat tactgtatta aacacaggta
+      901 ccaggcctat cgccataatg aactcacaca tgcatgcacc gtatgctaaa cagggagatg
+      961 ccgcatacct ctgccatcgt agctgtcaag cttgggactt ctctagactg attaagttat
+     1021 acaggcaagc cggctatgca gttatcgtcg taggtgatct caattcacgt ccaggaagcc
+     1081 tgcctcacaa gttcttaact caggaagctg gcctcgttga ttcttgggag caactgcatg
+     1141 gtaaacaaga cttagccgtc atagcaagac tctcaccgct gcagcaatta ctcaagggat
+     1201 gtacaacctg cgatagcctg ttaaacactt ggagggctca acgtcagcca gatgaagcct
+     1261 gtagactcga ctacgcactg attgatcctg attttttaca aacagtagac gctggcgtta
+     1321 ggttcaccga acgtatcccg catctcgatt gttctgtctc agatcacttc gcctacagct
+     1381 gcactctgaa catagtacca caaggtacag agtctagacc ttcaaccagc gttaagaggg
+     1441 caaaaactca tgaccgtgaa ttaattctcc agagatattc taattacgaa acaatgatcg
+     1501 agtgtataca tacctacctg aaaactgctc aaaggcaaaa gtttttccgt ggattacact
+     1561 tctgggcctc aattctcctg ttaatcgcaa gcctcgtcgt aacaaccttt actgctaaca
+     1621 aagccggctg gagttcaata ttctgggttc tgttcgcaat tgctgtcagc atctctggta
+     1681 caatagatgg agccatttca tttttattcg gcagaagcga aatcagggca ctcatagaag
+     1741 tagagcagga agttctggat gctgaacatc atttacaaac cttcctctct gagaagtaac
+     1801 gaggctctcc tttcatcata ccctctctaa ataaaattta ttcctagtta ttcctttctt
+     1861 cttcatatcc ttaatcatgc attcactgcc atgtgcaaat aaaggctctt gtggtagaaa
+     1921 cttttagctc aaacgtggta aaactatctc aacgtccttc cgtagacaac tggtgagcag
+     1981 tgcttctgta acactgcaga tctccaatga taaatcgata ccgtactaac tgcccgcact
+     2041 ataatgaact ctttgtatcc gtaactattt aaaatattca ttcatttcta taagctatat
+     2101 gtttatattt agattagagg ggttaaaaga aagtttttct cgaaagctta attttagctt
+     2161 ttactttgaa cttctagtaa ttgcgaggca gtatcgacaa tgcaatctct gaacttatta
+     2221 aattggaatc ctaataaatt tttggttttg cggttgtcgc acttgcagca gttttttgtc
+     2281 aaaaaggttg agccgctac
+//

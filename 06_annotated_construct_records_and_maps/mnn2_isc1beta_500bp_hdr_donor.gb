@@ -1,0 +1,103 @@
+LOCUS       MNN2_ISC1beta_50        2299 bp    DNA     linear   SYN 25-MAY-2026
+DEFINITION  MNN2-ISC1beta 500 bp HDR donor cassette, transcript/synthesis
+            orientation.
+ACCESSION   MNN2_ISC1beta_500bp_HDR_donor
+VERSION     MNN2_ISC1beta_500bp_HDR_donor
+KEYWORDS    .
+SOURCE      synthetic DNA construct
+  ORGANISM  Saccharomyces cerevisiae S288C / R64-1-1 synthetic donor candidate
+            .
+FEATURES             Location/Qualifiers
+     source          1..2299
+                     /organism="synthetic DNA construct"
+                     /mol_type="other DNA"
+                     /note="Computational donor candidate for MNN2 / YBR015C
+                     catalytic-domain replacement; not experimentally validated"
+     misc_feature    1..500
+                     /label="5_prime_homology_arm"
+                     /note="500 bp arm ending at retained MNN2 anchor boundary;
+                     genomic mapping ChrII:269381..269880; transcript/coding
+                     orientation; reverse-complement of genomic plus strand"
+     misc_feature    378..500
+                     /label="retained_native_anchor"
+                     /note="MNN2 aa1-41 retained medial-Golgi anchor; anchor is
+                     part of 5 prime homology arm and should not be duplicated"
+     misc_feature    501..530
+                     /label="(GGGGS)2_linker"
+                     /note="30 bp linker: GGTGGTGGTGGTTCTGGTGGTGGTGGTTCT"
+     CDS             531..1796
+                     /label="ISC1beta_ISC1_aa56_477_coding_region"
+                     /codon_start=1
+                     /product="ISC1/YER019W catalytic domain aa56-477"
+                     /note="Diversified codon variant beta encoding ISC1/YER019W
+                     aa56-477; no start codon included in payload; terminal stop
+                     annotated separately"
+     misc_feature    531..1799
+                     /label="ISC1beta_plus_TAA"
+                     /note="1266 bp diversified ISC1 payload plus TAA stop
+                     codon"
+     terminator      1797..1799
+                     /label="TAA_stop"
+                     /note="single terminal TAA stop codon"
+     CDS             378..1799
+                     /label="full_chimeric_ORF"
+                     /codon_start=1
+                     /product="MNN2 anchor-(GGGGS)2-ISC1beta chimera"
+                     /translation="MLLTKRFSKLFKLTFIVLILCGLFVITNKYMDENTSVKEYKGGGG
+                     SGGGGSRKERLRAIADKLAGHSMLTPISDELLPNGGDSNENEDYDVIALQEIWCVEDWK
+                     YLASACASKYPYQRLFHSGILTGPGLAILSKVPIESTFLYRFPINGRPSAVFRGDWYVG
+                     KSIAITVLNTGTRPIAIMNSHMHAPYAKQGDAAYLCHRSCQAWDFSRLIKLYRQAGYAV
+                     IVVGDLNSRPGSLPHKFLTQEAGLVDSWEQLHGKQDLAVIARLSPLQQLLKGCTTCDSL
+                     LNTWRAQRQPDEACRLDYALIDPDFLQTVDAGVRFTERIPHLDCSVSDHFAYSCTLNIV
+                     PQGTESRPSTSVKRAKTHDRELILQRYSNYETMIECIHTYLKTAQRQKFFRGLHFWASI
+                     LLLIASLVVTTFTANKAGWSSIFWVLFAIAVSISGTIDGAISFLFGRSEIRALIEVEQE
+                     VLDAEHHLQTFLSEK"
+                     /note="Full intended ORF: retained MNN2 anchor + linker +
+                     ISC1/YER019W aa56-477; 473 aa plus terminal stop"
+     misc_feature    1800..2299
+                     /label="3_prime_homology_arm"
+                     /note="500 bp arm starting immediately after native MNN2
+                     stop codon; genomic mapping ChrII:267210..267709;
+                     transcript/coding orientation; reverse-complement of
+                     genomic plus strand"
+ORIGIN
+        1 cgcacaagtt aagctggtgc gctcagaagt tggagggttc gctaaatagg ttatgcaaac
+       61 atgcaagtca agtgagtcgc cattggctcg cttggtgatt aggtgactct aatacatcgt
+      121 ccaggacccg ttattaccgt tcacgtgcta aaaaaggatc gcgtcctttt gcggagggat
+      181 gaaaaagata gtgaaaaaat aacaatgaag aaaaaaaaaa tatagaagaa tcatcaaaat
+      241 aaattacgtg tacttggtgt tgcttatacg ttaaaagcag aattgcccta ctttttaata
+      301 tcctcgtgct gctcaaggta tcatatctac ttcgagacaa atcagtgtag gtaggtcagt
+      361 aaaattatat tttcagtatg ctgcttacca aaaggttttc aaagctgttc aagctgacgt
+      421 tcatagtttt gatattgtgc gggctgttcg tcattacaaa caaatacatg gatgagaaca
+      481 cgtcggtcaa ggagtacaag ggtggtggtg gttctggtgg tggtggttct aggaaggaac
+      541 gcctcagagc catcgcagat aagctggctg gacattcaat gttaacacct ataagcgacg
+      601 agctcctgcc gaacggcggt gattctaacg aaaatgaaga ttacgacgtc attgccttac
+      661 aagagatctg gtgtgtagaa gattggaaat acctcgcatc agcttgcgcc agcaagtatc
+      721 cataccagag gctgttccac tctggaatat taaccggccc tggtcttgca attctgtcaa
+      781 aggttccgat cgaaagcact ttcttatacc gttttccaat aaacggcaga ccttctgctg
+      841 tgttcagggg cgattggtat gtaggtaaat caattgccat cacagttctc aacaccggaa
+      901 ctcgtccgat agcaattatg aatagccata tgcatgctcc atacgccaag caaggcgacg
+      961 cagcttacct gtgtcacaga tcttgtcaag cctgggattt ctcaaggtta atcaagctct
+     1021 atcgtcaggc aggttacgct gtcatagtag ttggagatct gaacagcaga cctggctctt
+     1081 taccgcataa atttctcaca caagaggccg gtctggtcga ctcatgggaa caattacatg
+     1141 gaaagcagga tctcgcagta attgctaggc tgagcccatt acaacaactc ctgaagggct
+     1201 gcaccacttg tgattcttta ctcaacacat ggcgtgccca gagacaacct gacgaagcat
+     1261 gtaggctgga ttacgcttta atcgatccgg acttcctcca aaccgttgat gccggtgtcc
+     1321 gtttcactga gagaatacca cacctggatt gctcagtaag cgaccatttt gcatattctt
+     1381 gtacattaaa tattgttcct cagggaaccg aatcaaggcc gagcacttct gtcaaacgtg
+     1441 ctaagacaca tgatagagaa ctcatcctgc aaaggtactc aaactacgag actatgatag
+     1501 aatgtattca cacttattta aagacagccc aacgtcagaa attcttcaga ggcctccatt
+     1561 tttgggcaag catcctgtta ctcatagctt ctctggtagt taccactttc acagccaaca
+     1621 aggcaggttg gtcaagcatt ttctgggtct tatttgctat cgccgtatct atatcaggaa
+     1681 ccattgatgg cgcaatcagc ttcctcttcg gtaggtctga aatacgtgct ctgattgagg
+     1741 ttgaacaaga agtcttagac gccgagcatc acctccaaac ttttctgtca gaaaagtaat
+     1801 atgcaacggg tcggactata gtttggacaa cttccattgg cgttttctac attcttatta
+     1861 ctattcctta catagttatg tttatttatc ttccagttat gtaaattttt tccttcacaa
+     1921 tccatataaa atgactttac tacagatgta taaatatgca gtcccgggtg tatttgagaa
+     1981 tcgagactac gtcataccgg taagtgggac tgcgttttga aaaaaaataa agaagtactt
+     2041 tcggcaggat atttgccaat gtgtacatat cccctcagtg aaaaagctcg aatcaaataa
+     2101 aagaaaaaac ctatatattg gaaagaagca aaattttcaa attaaacgca aaacaactga
+     2161 agaaaattag agatggctat tgttataaac aaaagaaacg tgagagtctt ggtaataact
+     2221 aatttactgc tcattgttgt gttttttgtg ttaaggaatt cgaatgctag cgtcaacgaa
+     2281 agtattacta ctcaccatc
+//
