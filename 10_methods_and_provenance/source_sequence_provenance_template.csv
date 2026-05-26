@@ -1,0 +1,9 @@
+derived_sequence_id,derived_file_path,source_component_id,source_component_path,source_database,source_accession,download_or_export_date,manual_or_scripted_step,sha256_source_file,verification_status,notes
+OCH1_ISC1alpha_full_donor,05_full_donor_cassette_assembly/TODO,OCH1_5prime_arm,TODO,NCBI/SGD,GCF_000146045.2 / OCH1 YGL038C,TODO,TODO,TODO,needs_verification,Fill with exact file used to generate 500 bp 5-prime arm.
+OCH1_ISC1alpha_full_donor,05_full_donor_cassette_assembly/TODO,linker_GGGGSx2,TODO,designed_sequence,(GGGGS)2 linker codon design,TODO,TODO,TODO,needs_verification,Record exact nucleotide sequence of linker and codon choice.
+OCH1_ISC1alpha_full_donor,05_full_donor_cassette_assembly/TODO,ISC1alpha_payload,TODO,NCBI/SGD,ISC1/YER019W,TODO,TODO,TODO,needs_verification,Record extraction coordinates for aa56-477 and stop codon.
+OCH1_ISC1alpha_full_donor,05_full_donor_cassette_assembly/TODO,OCH1_3prime_arm,TODO,NCBI/SGD,GCF_000146045.2 / OCH1 YGL038C,TODO,TODO,TODO,needs_verification,Fill with exact file used to generate 500 bp 3-prime arm.
+MNN2_ISC1beta_full_donor,05_full_donor_cassette_assembly/TODO,MNN2_5prime_arm,TODO,NCBI/SGD,GCF_000146045.2 / MNN2 YBR015C,TODO,TODO,TODO,needs_verification,Fill with exact file used to generate 500 bp 5-prime arm.
+MNN2_ISC1beta_full_donor,05_full_donor_cassette_assembly/TODO,ISC1beta_payload,TODO,NCBI/SGD,ISC1/YER019W,TODO,TODO,TODO,needs_verification,Record extraction coordinates and whether alpha/beta/gamma are identical or intentionally labeled variants.
+MNN5_ISC1gamma_full_donor,05_full_donor_cassette_assembly/TODO,MNN5_5prime_arm,TODO,NCBI/SGD,GCF_000146045.2 / MNN5 YJL186W,TODO,TODO,TODO,needs_verification,Fill with exact file used to generate 500 bp 5-prime arm.
+MNN5_ISC1gamma_full_donor,05_full_donor_cassette_assembly/TODO,ISC1gamma_payload,TODO,NCBI/SGD,ISC1/YER019W,TODO,TODO,TODO,needs_verification,Record extraction coordinates and stop codon handling.

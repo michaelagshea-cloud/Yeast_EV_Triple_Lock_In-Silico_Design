@@ -1,0 +1,38 @@
+# Command log
+
+Purpose: record exact commands used to generate, audit, or modify repository outputs.
+
+## Template
+
+Date: YYYY-MM-DD
+Operator: Michaela Shea
+Repository commit before run: TODO
+Repository commit after run: TODO
+Environment: TODO
+
+Commands:
+
+```bash
+python 09_reproducible_pipeline/rebuild_manifest.py --repo-root .
+python 09_reproducible_pipeline/generate_all_sequences.py --repo-root . --mode audit
+python 09_reproducible_pipeline/generate_all_sequences.py --repo-root . --mode write-template
+python 09_reproducible_pipeline/run_sequence_qc.py --repo-root .
+python 09_reproducible_pipeline/visualize_design_model.py --repo-root .
+pytest -q 09_reproducible_pipeline/tests
+```
+
+Outputs expected:
+
+```text
+00_metadata/rebuilt_file_manifest.csv
+00_metadata/sequence_inventory.csv
+10_methods_and_provenance/sequence_build_plan.csv
+07_sequence_qc_and_validation_reports/sequence_qc_results.csv
+07_sequence_qc_and_validation_reports/sequence_qc_results.json
+10_methods_and_provenance/visual_design_models.md
+```
+
+Notes:
+
+- Do not run build mode until component paths in `sequence_build_plan.csv` have been verified.
+- If any command is run manually through a web interface or Benchling export, record the exact manual action and export date.

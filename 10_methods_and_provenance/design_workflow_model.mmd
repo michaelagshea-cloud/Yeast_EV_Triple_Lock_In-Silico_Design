@@ -1,0 +1,10 @@
+flowchart TD
+    A[NCBI/SGD reference accessions] --> B[Source sequence provenance table]
+    B --> C[Component sequence files]
+    C --> D[Reviewed sequence_build_plan.csv]
+    D --> E[generate_all_sequences.py build mode]
+    E --> F[Derived donor FASTA files]
+    F --> G[run_sequence_qc.py]
+    G --> H[sequence_qc_results.csv/json]
+    H --> I[claim_strength_audit.csv]
+    I --> J[publication readiness decision]

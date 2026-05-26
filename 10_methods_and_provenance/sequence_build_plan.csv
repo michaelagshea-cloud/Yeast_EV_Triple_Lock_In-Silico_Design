@@ -1,0 +1,4 @@
+output_record_id,output_path,component_paths,expected_length_bp,notes
+OCH1_ISC1alpha_full_donor_candidate,derived_sequences/OCH1_ISC1alpha_full_donor_candidate.fasta,PATH_TO_OCH1_5P_ARM.fasta;PATH_TO_LINKER.fasta;PATH_TO_ISC1alpha_PAYLOAD.fasta;PATH_TO_OCH1_3P_ARM.fasta,2299,Replace placeholder component paths with reviewed source files before build mode.
+MNN2_ISC1beta_full_donor_candidate,derived_sequences/MNN2_ISC1beta_full_donor_candidate.fasta,PATH_TO_MNN2_5P_ARM.fasta;PATH_TO_LINKER.fasta;PATH_TO_ISC1beta_PAYLOAD.fasta;PATH_TO_MNN2_3P_ARM.fasta,2299,Replace placeholder component paths with reviewed source files before build mode.
+MNN5_ISC1gamma_full_donor_candidate,derived_sequences/MNN5_ISC1gamma_full_donor_candidate.fasta,PATH_TO_MNN5_5P_ARM.fasta;PATH_TO_LINKER.fasta;PATH_TO_ISC1gamma_PAYLOAD.fasta;PATH_TO_MNN5_3P_ARM.fasta,2299,Replace placeholder component paths with reviewed source files before build mode.

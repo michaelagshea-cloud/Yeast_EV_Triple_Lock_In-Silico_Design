@@ -1,0 +1,35 @@
+# Tool versions
+
+Update this file whenever the pipeline is run. Keep exact versions, not vague descriptions.
+
+## Required runtime
+
+Python: TODO; run `python --version`
+pytest: TODO; run `pytest --version`
+Operating system: TODO; run `uname -a` on macOS/Linux or `systeminfo` on Windows
+Git: TODO; run `git --version`
+
+## Optional external tools
+
+Benchling: TODO; record export date and file/version labels
+NCBI Datasets CLI: TODO; record version if used
+BLAST+: TODO; record version if used
+Biopython: not required by current scripts
+Mermaid/GitHub Markdown rendering: GitHub-rendered Mermaid diagrams
+
+## Current reproducibility scripts
+
+- `09_reproducible_pipeline/rebuild_manifest.py`
+- `09_reproducible_pipeline/generate_all_sequences.py`
+- `09_reproducible_pipeline/run_sequence_qc.py`
+- `09_reproducible_pipeline/visualize_design_model.py`
+
+## Exact commands to fill in
+
+```bash
+python --version
+python -m pip freeze
+pytest --version
+git rev-parse HEAD
+git status --short
+```
