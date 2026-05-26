@@ -1,0 +1,15 @@
+locus,systematic_name,expected_chromosome,region,status,BY4741_contig,BY4741_start,BY4741_end,strand_match,identity,notes
+OCH1,YGL038C,VII,500bp_5prime_arm,PASS,JRIS01000010.1,21160,21659,-,100%,Exact match to donor 5′ arm
+OCH1,YGL038C,VII,retained_native_anchor,PASS,JRIS01000010.1,21160,21294,-,100%,Exact match to retained native anchor (135 bp)
+OCH1,YGL038C,VII,500bp_3prime_arm,PASS,JRIS01000010.1,19352,19851,-,100%,Exact match to donor 3′ arm
+OCH1,YGL038C,VII,native_deleted_interval_between_arms,PASS,JRIS01000010.1,19852,21159,-,not_applicable,Native interval between arms = 1308 bp; replacement module = 1299 bp
+MNN2,YBR015C,II,500bp_5prime_arm,PASS,JRIS01000114.1,31343,31842,+,100%,Exact match to donor 5′ arm
+MNN2,YBR015C,II,retained_native_anchor,PASS,JRIS01000114.1,31720,31842,+,100%,Exact match to retained native anchor (123 bp)
+MNN2,YBR015C,II,500bp_3prime_arm,PASS,JRIS01000114.1,33514,34013,+,100%,Exact match to donor 3′ arm
+MNN2,YBR015C,II,native_deleted_interval_between_arms,PASS,JRIS01000114.1,31843,33513,+,not_applicable,Native interval between arms = 1671 bp; replacement module = 1299 bp
+MNN5,YJL186W,X,500bp_5prime_arm,PASS,JRIS01000094.1,74340,74839,-,100%,Exact match to donor 5′ arm
+MNN5,YJL186W,X,retained_native_anchor,PASS,JRIS01000094.1,74340,74474,-,100%,Exact match to retained native anchor (135 bp)
+MNN5,YJL186W,X,500bp_3prime_arm,PASS,JRIS01000094.1,72214,72713,-,100%,Exact match to donor 3′ arm
+MNN5,YJL186W,X,native_deleted_interval_between_arms,PASS,JRIS01000094.1,72714,74339,-,not_applicable,Native interval between arms = 1626 bp; replacement module = 1299 bp
+ISC1,YER019W,V,full_native_ISC1_CDS,PASS,JRIS01000103.1,236212,237645,-,100%,Exact match to S288C/R64-1-1 ISC1 CDS used as source reference
+ISC1,YER019W,V,native_ISC1_nt166_1431_aa56_477,PASS,JRIS01000103.1,236215,237480,-,100%,Exact match to native ISC1 catalytic-domain DNA equivalent

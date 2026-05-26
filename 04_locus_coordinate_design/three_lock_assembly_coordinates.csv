@@ -1,0 +1,4 @@
+locus,systematic_name,accession,chromosome,strand,anchor_aa_retained,anchor_genomic_start,anchor_genomic_end,deleted_genomic_start,deleted_genomic_end,deleted_length_bp,replacement_module_length_bp,net_chr_length_change_bp,five_prime_arm_genomic_start,five_prime_arm_genomic_end,three_prime_arm_genomic_start,three_prime_arm_genomic_end,donor_length_bp,payload_variant
+OCH1,YGL038C,BK006941.2,VII,-,45,426670,426804,425362,426669,1308,1299,-9,426670,427169,424862,425361,2299,ISC1alpha
+MNN2,YBR015C,BK006936.2,II,-,41,269381,269503,267710,269380,1671,1299,-372,269381,269880,267210,267709,2299,ISC1beta
+MNN5,YJL186W,BK006943.2,X,+,45,80155,80289,80290,81915,1626,1299,-327,79790,80289,81916,82415,2299,ISC1gamma
