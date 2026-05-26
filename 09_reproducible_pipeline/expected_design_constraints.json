@@ -1,0 +1,39 @@
+{
+  "project": "Yeast EV Triple-Lock In-Silico Design Package",
+  "version": "phase2_reproducibility_layer_v1",
+  "status": "computational_design_only",
+  "notes": [
+    "These checks are computational QC constraints only.",
+    "Passing these checks does not demonstrate transformation, genomic integration, expression, EV phenotype, peptide loading, BBB delivery, or therapeutic function.",
+    "Edit this file if the canonical architecture changes."
+  ],
+  "default_expected_lengths": {
+    "full_donor_candidate_bp": 2299,
+    "homology_arm_bp": 500,
+    "linker_bp": 30,
+    "isc1_payload_block_including_stop_bp": 1269
+  },
+  "record_rules": [
+    {
+      "name": "full_donor_candidate",
+      "match_any_case_insensitive": ["full_donor", "donor_cassette", "hdr_donor", "OCH1_ISC1", "MNN2_ISC1", "MNN5_ISC1"],
+      "expected_length_bp": 2299,
+      "severity": "warn"
+    },
+    {
+      "name": "isc1_payload_block",
+      "match_any_case_insensitive": ["ISC1alpha", "ISC1beta", "ISC1gamma", "isc1_payload"],
+      "expected_length_bp": 1269,
+      "severity": "warn"
+    },
+    {
+      "name": "homology_arm",
+      "match_any_case_insensitive": ["5prime_arm", "3prime_arm", "5_prime_arm", "3_prime_arm", "500bp_HDR"],
+      "expected_length_bp": 500,
+      "severity": "warn"
+    }
+  ],
+  "required_targets": ["OCH1", "MNN2", "MNN5"],
+  "payload_gene": "ISC1/YER019W",
+  "reference_background": "Saccharomyces cerevisiae S288C R64 / BY4741-compatible design context"
+}
