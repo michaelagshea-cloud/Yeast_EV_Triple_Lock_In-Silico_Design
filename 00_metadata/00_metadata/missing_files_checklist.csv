@@ -1,0 +1,16 @@
+priority,missing_item,why_needed,suggested_location
+HIGH,generate_all_sequences.py,Regenerates FASTA/GenBank/CSV outputs from reference inputs instead of relying only on final files.,09_reproducible_pipeline/
+HIGH,run_sequence_qc.py,"Reruns length, GC, translation, restriction, repeat, and identity checks.",09_reproducible_pipeline/
+HIGH,requirements.txt or environment.yml,Defines software dependencies and versions.,09_reproducible_pipeline/
+HIGH,run_all.sh,Provides one-command rebuild of the package.,09_reproducible_pipeline/
+HIGH,tool_versions.txt,Records exact versions used for computational validation.,10_methods_and_provenance/
+HIGH,command_log.txt,Shows commands used to generate outputs.,10_methods_and_provenance/
+HIGH,methods_computational_design.md,Explains computational methods in publication-style language.,10_methods_and_provenance/
+HIGH,data_availability_statement.md,Required-style statement explaining what data are available and where.,11_publication_readiness/
+HIGH,code_availability_statement.md,Required once scripts are deposited.,11_publication_readiness/
+HIGH,release DOI,Makes the exact repository version citable and stable.,GitHub release + Zenodo/Figshare
+MEDIUM,CHANGELOG.md,Documents version history and changes from v1.0 onward.,root
+MEDIUM,full CC-BY-4.0 license text,Current LICENSE is minimal; full text helps reuse clarity.,LICENSE
+MEDIUM,software license for scripts,Needed if executable code is added; data license alone is not ideal for code.,LICENSE-CODE or root LICENSE section
+MEDIUM,rename 08_genome_assembly_confidence,Avoids overclaiming genome-wide validation.,08_by4741_locus_compatibility/
+LOW,figures/overview schematic,Helps readers understand architecture without implying experimental validation.,figures/ or README assets

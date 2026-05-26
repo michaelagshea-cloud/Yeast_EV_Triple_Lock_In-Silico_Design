@@ -1,0 +1,33 @@
+file,column,definition,allowed_values_or_format,notes
+00_metadata/publication_file_manifest.csv,upload_order,Recommended order for upload/review,integer,Keeps GitHub layout chronological and reviewer-friendly.
+00_metadata/publication_file_manifest.csv,github_path,Path where file should live in the repository,relative path,Use forward slashes.
+00_metadata/publication_file_manifest.csv,file_category,Functional class of the file,short text,"Example: final_donors, payload_qc, validation_report."
+00_metadata/publication_file_manifest.csv,role_in_package,Why the file exists and what it supports,sentence,Use this for reviewer navigation.
+00_metadata/publication_file_manifest.csv,status,Action recommendation,"KEEP, ADD, UPDATE_RECOMMENDED, KEEP_UPDATE, KEEP_CAUTIOUS, KEEP_RENAME_RECOMMENDED, MISSING_ADD",Do not delete KEEP files.
+00_metadata/publication_file_manifest.csv,notes,Important caution or upload instruction,sentence,Explains why each file matters.
+00_metadata/claim_strength_audit.csv,claim_area,Topic or claim being evaluated,short text,Example: EV phenotype.
+00_metadata/claim_strength_audit.csv,current_support_level,How strongly current repo supports the claim,"SUPPORTED, SUPPORTED_WITH_QUALIFIER, NOT_SUPPORTED",Use safest language in reports.
+00_metadata/claim_strength_audit.csv,safe_wording,Recommended phrasing,sentence,Use in README/manuscript.
+00_metadata/claim_strength_audit.csv,avoid_wording,Language that overstates evidence,sentence,Avoid in abstracts and figure captions.
+00_metadata/claim_strength_audit.csv,evidence_needed_to_upgrade,Future evidence needed for stronger claim,sentence,Can be computational or experimental.
+00_metadata/missing_files_checklist.csv,priority,Importance for publication readiness,"HIGH, MEDIUM, LOW",HIGH means add before manuscript submission.
+00_metadata/missing_files_checklist.csv,missing_item,Recommended file or folder to add,path or short title,Use exact paths where possible.
+00_metadata/missing_files_checklist.csv,why_needed,Reason this item matters,sentence,"Reproducibility, provenance, or review."
+00_metadata/missing_files_checklist.csv,suggested_location,Where to place it,relative path,Create folders if absent.
+01_reference_gene_provenance/reference_gene_provenance.csv,gene,Standard gene name,text,"ISC1, OCH1, MNN2, MNN5."
+01_reference_gene_provenance/reference_gene_provenance.csv,systematic_name,Systematic yeast gene identifier,text,Example: YER019W.
+01_reference_gene_provenance/reference_gene_provenance.csv,sgdid,Saccharomyces Genome Database identifier,text,Example: S000000821.
+01_reference_gene_provenance/reference_gene_provenance.csv,chromosome,Chromosome identifier,Roman numeral or chromosome name,Use consistent coordinate reference.
+01_reference_gene_provenance/reference_gene_provenance.csv,reference_accession,Reference sequence accession,accession.version,Example: BK006939.2.
+01_reference_gene_provenance/reference_gene_provenance.csv,coordinates,Reference coordinate interval,start-end,Specify coordinate system in methods.
+01_reference_gene_provenance/reference_gene_provenance.csv,strand,Transcript strand,+ or -,Important for transcript/synthesis orientation.
+01_reference_gene_provenance/reference_gene_provenance.csv,role,Role of gene/reference in design,sentence,Source payload or target locus.
+01_reference_gene_provenance/reference_gene_provenance.csv,status,Reference status,canonical_reference or similar,Clarify source database/date later.
+05_full_donor_cassette_assembly/full_donor_feature_table.csv,donor,Donor-candidate identifier,text,Example: OCH1_ISC1alpha_500bp_HDR_donor.
+05_full_donor_cassette_assembly/full_donor_feature_table.csv,target_locus,Target locus/gene,gene/systematic name,Example: OCH1/YGL038C.
+05_full_donor_cassette_assembly/full_donor_feature_table.csv,total_length_bp,Full donor cassette length,integer bp,Current donors are 2299 bp.
+05_full_donor_cassette_assembly/full_donor_feature_table.csv,feature,Named sequence feature,controlled text,"5_prime_homology_arm, linker, payload, stop, 3_prime_homology_arm."
+05_full_donor_cassette_assembly/full_donor_feature_table.csv,start_1based,Feature start coordinate within donor,integer,1-based inclusive.
+05_full_donor_cassette_assembly/full_donor_feature_table.csv,end_1based,Feature end coordinate within donor,integer,1-based inclusive.
+05_full_donor_cassette_assembly/full_donor_feature_table.csv,length_bp,Feature length,integer bp,Should equal end-start+1.
+05_full_donor_cassette_assembly/full_donor_feature_table.csv,notes,Feature-specific notes,text,Use for anchor and payload caveats.

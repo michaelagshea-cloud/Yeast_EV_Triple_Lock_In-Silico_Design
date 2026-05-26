@@ -1,0 +1,39 @@
+upload_order,github_path,file_category,role_in_package,status,notes
+1,README.md,repository_overview,"Root-level overview, current status, design summary, limitations",REPLACE_OR_UPDATE,Use the cleaner README.md included in this package.
+2,LICENSE,license,Repository license marker,KEEP_REVIEW,Current file only says CC-BY-4.0; consider full license text or dual license if code is added.
+3,CITATION.cff,citation_metadata,Citation metadata for the dataset/repository,UPDATE_RECOMMENDED,"Add author name, release date, repository URL, DOI after Zenodo/Figshare archive."
+4,00_metadata/00_master_file_manifest.csv,manifest,Existing path/size/checksum inventory,KEEP,Good core file; add descriptions and file roles using publication_file_manifest.csv.
+5,00_metadata/publication_file_manifest.csv,manifest,Human-readable publication manifest with file roles and claim limits,ADD,Generated here.
+6,00_metadata/data_dictionary.csv,data_dictionary,Column definitions for package-level metadata and QC tables,ADD,Generated here.
+7,00_metadata/claim_strength_audit.csv,claim_audit,Supported vs unsupported claims,ADD,Generated here.
+8,00_metadata/missing_files_checklist.csv,checklist,Publication-readiness missing-file list,ADD,Generated here.
+9,01_reference_gene_provenance/reference_gene_provenance.csv,reference_metadata,"Reference gene accessions, coordinates, roles",KEEP,Useful and correctly placed.
+10,01_reference_gene_provenance/*.fasta,reference_sequences,"Reference FASTA records for ISC1, OCH1, MNN2, MNN5",KEEP,Keep exact source/provenance naming.
+11,01_reference_gene_provenance/*.pdf,reference_snapshots,Reference/source visual snapshots or downloaded records,KEEP,"Useful for provenance, but not a substitute for accession-based methods."
+12,02_isc1_payload_design/isc1_payload_design_readme.md,payload_methods,Payload design explanation,KEEP_UPDATE,Good; keep strong note that 1269 bp includes TAA.
+13,02_isc1_payload_design/isc1alpha_aa56_477_payload_plus_taa_1269bp.fasta,payload_sequence,ISC1alpha payload FASTA,KEEP,Dry-lab sequence artifact.
+14,02_isc1_payload_design/isc1beta_aa56_477_payload_plus_taa_1269bp.fasta,payload_sequence,ISC1beta payload FASTA,KEEP,Dry-lab sequence artifact.
+15,02_isc1_payload_design/isc1gamma_aa56_477_payload_plus_taa_1269bp.fasta,payload_sequence,ISC1gamma payload FASTA,KEEP,Dry-lab sequence artifact.
+16,03_isc1_payload_validation/isc1_alpha_beta_gamma_payload_validation.csv,payload_qc,"Payload length, GC, translation and restriction-screen metrics",KEEP,Useful for sequence-level QC.
+17,03_isc1_payload_validation/isc1_payload_pairwise_identity.csv,payload_qc,Pairwise payload identity comparison,KEEP,Useful for documenting diversified payloads.
+18,03_isc1_payload_validation/preliminary_isc1_candidate_validation_report.txt,payload_qc_report,Narrative payload validation summary,KEEP_UPDATE,Use cautious language: preliminary/in-silico.
+19,04_locus_coordinate_design/three_lock_assembly_coordinates.csv,locus_design,Coordinate table for donor assembly logic,KEEP,Correct placement.
+20,04_locus_coordinate_design/by4741_locus_confirmation_matrix.csv,locus_compatibility,BY4741 target-locus compatibility matrix,KEEP,Avoid implying whole-genome validation.
+21,04_locus_coordinate_design/by4741_confirmed_locus_extracts_transcript_orientation.fasta,locus_compatibility,Extracted BY4741 target-locus sequences,KEEP,"Duplicated in folder 08; okay, but document duplication."
+22,04_locus_coordinate_design/three_lock_locus_design_summary.md,locus_design_notes,Locus design summary,KEEP_UPDATE,Good. Add methods/code link once scripts exist.
+23,05_full_donor_cassette_assembly/all_three_full_donor_cassettes_2299bp.fasta,final_donors,Combined FASTA for all donor candidates,KEEP,Central sequence artifact.
+24,05_full_donor_cassette_assembly/*_full_donor_2299bp.fasta,final_donors,Individual full donor candidate FASTA files,KEEP,Central sequence artifacts.
+25,05_full_donor_cassette_assembly/full_donor_feature_table.csv,feature_table,Feature boundaries for each 2299 bp donor,KEEP,Strong supporting table.
+26,05_full_donor_cassette_assembly/full_donor_cassette_readme.md,assembly_notes,Donor assembly notes,KEEP_UPDATE,Add link to reproducible pipeline later.
+27,06_annotated_construct_records_and_maps/*.gb,construct_records,Annotated GenBank records,KEEP,Strong for design communication/review.
+28,06_annotated_construct_records_and_maps/*benchling_map.pdf,visual_maps,Benchling visual maps,KEEP,Useful as visual construct documentation.
+29,06_annotated_construct_records_and_maps/benchling_import_notes.txt,construct_notes,Benchling import notes,KEEP,Good supporting notes.
+30,06_annotated_construct_records_and_maps/construct_record_notes.md,construct_notes,Construct record summary,KEEP_UPDATE,Good; keep computational-only caveat.
+31,07_sequence_qc_and_validation_reports/final_three_lock_validation_summary_report.txt,validation_report,Current final validation report,KEEP_UPDATE,Good but convert/also provide markdown report for readability.
+32,07_sequence_qc_and_validation_reports/repository_validation_report.md,validation_report,Publication-readiness review and claim audit,ADD,Generated here.
+33,07_sequence_qc_and_validation_reports/*screening*,sequence_qc,Synthesis/restriction screening summaries,KEEP,Useful; must be traceable to code later.
+34,07_sequence_qc_and_validation_reports/*primer*,future_validation_design,Primer/junction validation planning tables,KEEP_CAUTIOUS,"These are future experimental validation planning aids, not proof."
+35,08_genome_assembly_confidence/*,assembly_locus_compatibility,BY4741 target-locus compatibility and assembly addendum,KEEP_RENAME_RECOMMENDED,Rename folder to 08_by4741_locus_compatibility unless genome-wide analyses are added.
+36,09_reproducible_pipeline/,reproducibility,Code to regenerate all files from source inputs,MISSING_ADD,Most important missing publication-style component.
+37,10_methods_and_provenance/,methods,"Computational methods, command log, tool versions",MISSING_ADD,Needed for reproducibility.
+38,11_publication_readiness/,publication_admin,"Data/code availability statements, release notes, DOI notes",MISSING_ADD,Needed for manuscript-style package.
