@@ -1,0 +1,25 @@
+donor,target_locus,total_length_bp,feature,start_1based,end_1based,length_bp,notes
+OCH1_ISC1alpha_500bp_HDR_donor,OCH1/YGL038C,2299,5_prime_homology_arm,1,500,500,Genomic map ChrVII:426670..427169; includes retained anchor at terminus
+OCH1_ISC1alpha_500bp_HDR_donor,OCH1/YGL038C,2299,retained_native_anchor_within_5p_arm,366,500,135,OCH1 aa 1-45; do not duplicate in payload
+OCH1_ISC1alpha_500bp_HDR_donor,OCH1/YGL038C,2299,GGGGSx2_linker,501,530,30,GGTGGTGGTGGTTCTGGTGGTGGTGGTTCT
+OCH1_ISC1alpha_500bp_HDR_donor,OCH1/YGL038C,2299,ISC1alpha_ISC1_YER019W_aa56_477_plus_TAA,531,1799,1269,1266 bp diversified payload coding region + TAA stop
+OCH1_ISC1alpha_500bp_HDR_donor,OCH1/YGL038C,2299,ISC1_payload_coding_region_no_stop,531,1796,1266,encodes ISC1/YER019W aa56-477
+OCH1_ISC1alpha_500bp_HDR_donor,OCH1/YGL038C,2299,TAA_stop,1797,1799,3,single terminal TAA
+OCH1_ISC1alpha_500bp_HDR_donor,OCH1/YGL038C,2299,3_prime_homology_arm,1800,2299,500,Genomic map ChrVII:424862..425361; starts immediately after native OCH1 stop codon
+OCH1_ISC1alpha_500bp_HDR_donor,OCH1/YGL038C,2299,full_translatable_chimera_ORF,366,1799,1434,OCH1 anchor + linker + ISC1alpha + TAA
+MNN2_ISC1beta_500bp_HDR_donor,MNN2/YBR015C,2299,5_prime_homology_arm,1,500,500,Genomic map ChrII:269381..269880; includes retained anchor at terminus
+MNN2_ISC1beta_500bp_HDR_donor,MNN2/YBR015C,2299,retained_native_anchor_within_5p_arm,378,500,123,MNN2 aa 1-41; do not duplicate in payload
+MNN2_ISC1beta_500bp_HDR_donor,MNN2/YBR015C,2299,GGGGSx2_linker,501,530,30,GGTGGTGGTGGTTCTGGTGGTGGTGGTTCT
+MNN2_ISC1beta_500bp_HDR_donor,MNN2/YBR015C,2299,ISC1beta_ISC1_YER019W_aa56_477_plus_TAA,531,1799,1269,1266 bp diversified payload coding region + TAA stop
+MNN2_ISC1beta_500bp_HDR_donor,MNN2/YBR015C,2299,ISC1_payload_coding_region_no_stop,531,1796,1266,encodes ISC1/YER019W aa56-477
+MNN2_ISC1beta_500bp_HDR_donor,MNN2/YBR015C,2299,TAA_stop,1797,1799,3,single terminal TAA
+MNN2_ISC1beta_500bp_HDR_donor,MNN2/YBR015C,2299,3_prime_homology_arm,1800,2299,500,Genomic map ChrII:267210..267709; starts immediately after native MNN2 stop codon
+MNN2_ISC1beta_500bp_HDR_donor,MNN2/YBR015C,2299,full_translatable_chimera_ORF,378,1799,1422,MNN2 anchor + linker + ISC1beta + TAA
+MNN5_ISC1gamma_500bp_HDR_donor,MNN5/YJL186W,2299,5_prime_homology_arm,1,500,500,Genomic map ChrX:79790..80289; includes retained anchor at terminus
+MNN5_ISC1gamma_500bp_HDR_donor,MNN5/YJL186W,2299,retained_native_anchor_within_5p_arm,366,500,135,MNN5 aa 1-45; do not duplicate in payload
+MNN5_ISC1gamma_500bp_HDR_donor,MNN5/YJL186W,2299,GGGGSx2_linker,501,530,30,GGTGGTGGTGGTTCTGGTGGTGGTGGTTCT
+MNN5_ISC1gamma_500bp_HDR_donor,MNN5/YJL186W,2299,ISC1gamma_ISC1_YER019W_aa56_477_plus_TAA,531,1799,1269,1266 bp diversified payload coding region + TAA stop
+MNN5_ISC1gamma_500bp_HDR_donor,MNN5/YJL186W,2299,ISC1_payload_coding_region_no_stop,531,1796,1266,encodes ISC1/YER019W aa56-477
+MNN5_ISC1gamma_500bp_HDR_donor,MNN5/YJL186W,2299,TAA_stop,1797,1799,3,single terminal TAA
+MNN5_ISC1gamma_500bp_HDR_donor,MNN5/YJL186W,2299,3_prime_homology_arm,1800,2299,500,Genomic map ChrX:81916..82415; starts immediately after native MNN5 stop codon
+MNN5_ISC1gamma_500bp_HDR_donor,MNN5/YJL186W,2299,full_translatable_chimera_ORF,366,1799,1434,MNN5 anchor + linker + ISC1gamma + TAA
