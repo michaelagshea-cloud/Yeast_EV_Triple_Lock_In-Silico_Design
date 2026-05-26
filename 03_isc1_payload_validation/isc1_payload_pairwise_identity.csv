@@ -1,0 +1,4 @@
+comparison,pairwise_identity_percent,longest_exact_shared_block_bp,longest_exact_shared_block_sequence
+ISC1alpha_vs_ISC1beta,64.38,9,CAACGTCAG
+ISC1alpha_vs_ISC1gamma,64.3,10,ATACATACCT
+ISC1beta_vs_ISC1gamma,64.22,11,GAAGATTGGAA

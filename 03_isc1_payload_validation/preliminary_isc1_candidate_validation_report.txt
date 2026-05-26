@@ -1,0 +1,38 @@
+Preliminary ISC1 alpha/beta/gamma candidate validation
+Source: S288C ISC1/YER019W. Target: aa56-477. Draft candidates only; not vendor-cleared synthesis sequences.
+Target protein length: 422 aa; DNA length: 1266 bp + TAA = 1269 bp
+
+ISC1alpha
+Length: 1269 bp
+GC: 45.47%
+Native ISC1 nt166-1431 identity: 73.62%
+Translation exact: True
+Starts with ATG: False
+Ends with TAA: True
+Internal longest exact repeat: 9 bp (AAGCCGGCT)
+Type IIS restriction sites screened: []
+
+ISC1beta
+Length: 1269 bp
+GC: 46.34%
+Native ISC1 nt166-1431 identity: 75.12%
+Translation exact: True
+Starts with ATG: False
+Ends with TAA: True
+Internal longest exact repeat: 10 bp (TTCTGTCAAA)
+Type IIS restriction sites screened: []
+
+ISC1gamma
+Length: 1269 bp
+GC: 46.10%
+Native ISC1 nt166-1431 identity: 75.12%
+Translation exact: True
+Starts with ATG: False
+Ends with TAA: True
+Internal longest exact repeat: 10 bp (TCCTGAATAC)
+Type IIS restriction sites screened: []
+
+Pairwise comparisons
+ISC1alpha vs ISC1beta: identity 64.38%, longest exact shared block 9 bp (CAACGTCAG)
+ISC1alpha vs ISC1gamma: identity 64.30%, longest exact shared block 10 bp (ATACATACCT)
+ISC1beta vs ISC1gamma: identity 64.22%, longest exact shared block 11 bp (GAAGATTGGAA)

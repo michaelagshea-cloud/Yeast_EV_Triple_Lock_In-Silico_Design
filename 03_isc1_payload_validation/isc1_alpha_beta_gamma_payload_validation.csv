@@ -1,0 +1,4 @@
+payload,length_bp,gc_percent,native_isc1_nt166_1431_identity_percent,translation_exact,starts_with_atg,ends_with_taa,longest_internal_repeat_bp,type_iis_sites_detected
+ISC1alpha,1269,45.47,73.62,True,False,True,9,none_detected_in_primary_screen
+ISC1beta,1269,46.34,75.12,True,False,True,10,none_detected_in_primary_screen
+ISC1gamma,1269,46.1,75.12,True,False,True,10,none_detected_in_primary_screen
