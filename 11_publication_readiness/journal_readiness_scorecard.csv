@@ -1,0 +1,8 @@
+readiness_domain,current_level,publication_ready_requirement,recommended_fix,priority
+Public repository,present,Public repo with stable version/release,Create v1.1 or phase2 release after adding reproducibility layer,high
+Persistent DOI,missing,DOI-minted archived release,Connect GitHub to Zenodo or archive through Software Heritage/Figshare,high
+Code availability,partial,All custom code publicly available and runnable,Upload 09_reproducible_pipeline and GitHub Actions workflow,high
+Data availability,partial,Source and derived data with checksums and accessions,Fill source_database_accessions and rerun manifest/QC,high
+Workflow tests,basic_package_included,Automated tests pass in clean environment,"Enable GitHub Actions, inspect run logs, add tests for real files",medium_high
+Visual model,basic_package_included,Clear workflow/design diagrams tied to repository claims,Run visualize_design_model.py and include output in methods/provenance,medium
+Claim strength,improved_but_monitor,Claims must match computational-only evidence,Use claim_strength_audit.csv before every README/manuscript edit,high

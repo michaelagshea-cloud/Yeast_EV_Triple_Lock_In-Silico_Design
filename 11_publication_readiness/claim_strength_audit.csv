@@ -1,0 +1,9 @@
+claim_or_phrase,current_status,evidence_needed,recommended_public_wording,risk_level
+Computational donor-candidate design,supported_by_current_repo,Existing FASTA/GenBank/design/QC files plus reproducible manifest and sequence QC,This repository presents a computational donor-candidate design package.,low
+BY4741-compatible design,partially_supported_computationally,Explicit BY4741 locus compatibility checks and source accessions,"The donor candidates are designed for BY4741/S288C-compatible loci, pending experimental strain verification.",medium
+Genome assembly confidence,too_broad_unless_defined,"Whole-genome verification, reference comparison, and variant audit",Use locus-level compatibility or sequence-level design confidence unless full genome-wide analysis is performed.,medium_high
+Validated engineered yeast strain,not_supported,"Transformation, clone selection, PCR/Sanger/long-read integration confirmation",Do not use until wet-lab validation exists.,high
+ISC1 expression confirmed,not_supported,"RT-qPCR, Western blot/proteomics, localization evidence",Do not use until expression data exist.,high
+Altered extracellular-vesicle phenotype,not_supported,"EV isolation, NTA, TEM, protein quantification, contamination controls",Frame as a future experimental hypothesis only.,high
+Peptide loading demonstrated,not_supported,"Peptide input/recovery, EV pellet/supernatant/wash quantification, calibration curves",Frame as future planned assay only.,high
+BBB delivery or therapeutic function,not_supported,"Cell/animal delivery, pharmacology, disease-model efficacy, safety controls",Do not use in repository claims except as long-term rationale/future work.,very_high

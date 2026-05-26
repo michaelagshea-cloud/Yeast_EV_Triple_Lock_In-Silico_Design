@@ -1,0 +1,10 @@
+item,folder,status,why_it_matters,next_action
+Reviewed sequence_build_plan.csv,10_methods_and_provenance,template_needed_then_verify,Allows exact regeneration of donor sequences from components,"Run write-template mode, replace placeholder paths, then review manually."
+Exact source accessions and download dates,10_methods_and_provenance,incomplete,Needed for sequence provenance and journal review,Fill source_database_accessions.md and source_sequence_provenance_template.csv.
+Rebuilt manifest with checksums,00_metadata,generated_by_script,Supports file integrity and reviewer audit,Run rebuild_manifest.py after every upload/change.
+Sequence QC CSV/JSON from current repo,07_sequence_qc_and_validation_reports,generated_by_script,Supports machine-readable QC and reviewer rerun,Run run_sequence_qc.py after every sequence edit.
+Automated tests,09_reproducible_pipeline/tests,included_basic_tests,Shows scripts can be imported and core functions work,Run pytest locally and through GitHub Actions.
+GitHub Actions workflow,.github/workflows,included_basic_workflow,Gives visible workflow/run status on GitHub,"Upload workflow, then check Actions tab after commit."
+Persistent archived DOI,GitHub release/Zenodo,missing,High-impact journals prefer/require stable archival identifiers,Create GitHub release and archive with Zenodo or equivalent.
+Full software/data license clarity,root,needs_review,Reviewers need reuse terms for code and data,Use CC-BY for docs/data and MIT/BSD/Apache for code if appropriate.
+Experimental validation data,future data folders,not_present,Required for biological/therapeutic claims,Do not claim; add only after experiments are performed.
