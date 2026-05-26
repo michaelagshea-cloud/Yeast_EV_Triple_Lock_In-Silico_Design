@@ -1,0 +1,12 @@
+claim_area,current_support_level,safe_wording,avoid_wording,evidence_needed_to_upgrade
+Donor design,SUPPORTED,Three HDR donor candidates were computationally designed and documented.,The donors were experimentally built or integrated.,Vendor synthesis records or experimental integration data.
+Sequence QC,SUPPORTED,"Sequence-level QC summaries are provided for length, frame/translation, restriction screens, repeats, and feature boundaries.",The constructs are biologically validated.,Independent rerun of QC using deposited scripts and tool versions.
+BY4741 compatibility,SUPPORTED_WITH_QUALIFIER,Target-locus compatibility was checked in silico against BY4741 for the donor-package regions.,BY4741 genome is fully validated or structurally confirmed.,"BUSCO, read mapping, synteny/SV analysis, or long-read confirmation."
+Computational validation,SUPPORTED_WITH_QUALIFIER,Computational sequence validation was performed for donor-candidate design review.,"Validated strain, validated EV platform, or validated therapeutic system.","Wet-lab transformation, sequencing, expression, and phenotype assays."
+ISC1 expression,NOT_SUPPORTED,The package designs ISC1/YER019W aa56-477 payload sequences.,ISC1 is expressed in yeast.,"RT-qPCR, Western blot/proteomics, tagged expression, or targeted MS."
+Genomic integration,NOT_SUPPORTED,The files support donor-candidate design only.,The edit was integrated into the yeast genome.,"Colony PCR, junction PCR, Sanger/NGS across insertion sites."
+Lipid remodeling,NOT_SUPPORTED,No lipidomic or sphingolipid assay data are included.,The construct remodels sphingolipids.,LC-MS/MS lipidomics with controls and replicates.
+EV phenotype,NOT_SUPPORTED,"No EV particle-count, size, morphology, purity, or cargo data are included.",The engineered yeast produces altered or improved EVs.,"NTA, TEM, protein quantification, contamination controls, replicate statistics."
+Peptide loading,NOT_SUPPORTED,No peptide-loading measurements are included.,EVs load or deliver peptide cargo.,"Fluorescence calibration, pellet/supernatant/wash mass balance, particle-normalized loading."
+Immune evasion or BBB delivery,NOT_SUPPORTED,"No cell, animal, BBB, immune, or uptake data are included.",The EVs evade immune detection or cross the BBB.,Validated in vitro/in vivo assays with controls.
+Therapeutic relevance,NOT_SUPPORTED,The repository does not test disease or therapeutic outcomes.,"The system treats Alzheimer’s, aging brain decline, or disease.","Disease-model assays, safety data, delivery data, and efficacy endpoints."
