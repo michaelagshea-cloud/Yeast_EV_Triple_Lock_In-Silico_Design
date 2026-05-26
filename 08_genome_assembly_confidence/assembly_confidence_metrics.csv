@@ -1,0 +1,13 @@
+validation_item,current_result,status,interpretation,next_step
+Assembly accession,GCA_000766575.2 / ASM76657v2,available,BY4741 public assembly identified,None
+Assembly level,Scaffold,available,Not chromosome-complete; suitable for targeted compatibility checks,None
+Total sequence length,11529746 bp,available,Expected yeast-genome scale,None
+Contig N50,49192 bp,available,Moderate fragmented contig continuity,None
+Contig L50,72,available,72 contigs cover half the assembly,None
+Scaffold N50,112644 bp,available,Scaffold continuity stronger than contig continuity,None
+Scaffold L50,31,available,31 scaffolds cover half the assembly,None
+Reported coverage,209x,available,Strong Illumina short-read depth,Optional raw-read remapping
+Sequencing technology,Illumina HiSeq,available,Short-read assembly only,Long-read validation unavailable
+BUSCO completeness,not run,pending,Completeness not yet quantified,Run BUSCO genome mode
+Target-locus sequence confirmation,exact match for OCH1/MNN2/MNN5/ISC1,complete,Supports donor-package compatibility,None unless changing strain
+Genome-wide structural variant analysis,not run,pending,Genome-wide rearrangements not assessed,Align BY4741 assembly to R64-1-1
