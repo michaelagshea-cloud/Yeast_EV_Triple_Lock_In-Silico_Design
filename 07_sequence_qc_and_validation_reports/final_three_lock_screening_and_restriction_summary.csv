@@ -1,0 +1,4 @@
+donor,gc,low50,high50,homopolymer,primary,secondary,common,assembly_note
+OCH1_ISC1alpha_500bp_HDR_donor,42.11,14,62,none >=8 bp detected,No BsaI/BsmBI/Esp3I/BbsI/SapI/AarI detected,FokI present; BtgZI absent,"HindIII, XbaI, KpnI, PstI detected",Direct HDR or Gibson/HiFi preferred; Golden Gate should be matched to enzyme list
+MNN2_ISC1beta_500bp_HDR_donor,42.24,14,60,A10 in 5prime arm; A8 in 3prime arm,No BsaI/BsmBI/Esp3I/BbsI/SapI/AarI detected,FokI and BtgZI present,"EcoRI, NheI, SacI, SalI detected",Direct HDR or Gibson/HiFi preferred; Golden Gate should be matched to enzyme list
+MNN5_ISC1gamma_500bp_HDR_donor,42.45,16,60,T10 and A8 in 5prime arm,No BsaI/BsmBI/Esp3I/SapI/AarI detected; BbsI present in current cassette,FokI and BtgZI present,"EcoRI, HindIII, NheI, SacI, PstI detected",Avoid BbsI Golden Gate unless domesticated; direct HDR or Gibson/HiFi preferred

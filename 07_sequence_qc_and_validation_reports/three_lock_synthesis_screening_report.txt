@@ -1,0 +1,95 @@
+THREE-LOCK PRELIMINARY SYNTHESIS / REPEAT / RESTRICTION SCREENING REPORT
+Scope: current preliminary ISC1alpha/beta/gamma payloads and full donor cassettes. Not a vendor clearance.
+
+Target: ISC1/YER019W aa56-477; payloads are 1269 bp including terminal TAA.
+Donor format: 500bp arm + (GGGGS)2 + payload + 500bp arm.
+
+PAYLOAD SUMMARY
+
+ISC1alpha
+  length: 1269 bp; GC: 45.47%; translation exact: True; starts ATG: False; ends TAA: True; internal stops: False
+  GC50 min/max: {'min_gc': 28.000000000000004, 'min_pos': (929, 978), 'max_gc': 57.99999999999999, 'max_pos': (701, 750)}
+  GC100 min/max: {'min_gc': 34.0, 'min_pos': (927, 1026), 'max_gc': 53.0, 'max_pos': (367, 466)}
+  longest homopolymer: ('T', 6, 762, 767)
+  native identity: 73.62%; native longest exact shared: 14 bp (CAAACAGTAGACGC)
+  internal repeat: (9, 'AAGCCGGCT', [497, 1091])
+  inverted repeat approx: (0, '', 0, 0, 0)
+  type IIS hits: [('FokI', 'GGATG', 667, 671), ('FokI', 'GGATG', 1227, 1231)]
+  common restriction hits: [('HindIII', 'AAGCTT', 458, 463), ('XbaI', 'TCTAGA', 472, 477), ('XbaI', 'TCTAGA', 883, 888), ('KpnI', 'GGTACC', 252, 257), ('KpnI', 'GGTACC', 367, 372), ('PstI', 'CTGCAG', 649, 654)]
+  polyA/T motif hits: [('TTTTTT', 'TTTTTT', 762, 767)]
+
+ISC1beta
+  length: 1269 bp; GC: 46.34%; translation exact: True; starts ATG: False; ends TAA: True; internal stops: False
+  GC50 min/max: {'min_gc': 30.0, 'min_pos': (818, 867), 'max_gc': 56.00000000000001, 'max_pos': (754, 803)}
+  GC100 min/max: {'min_gc': 36.0, 'min_pos': (895, 994), 'max_gc': 54.0, 'max_pos': (702, 801)}
+  longest homopolymer: ('T', 5, 1029, 1033)
+  native identity: 75.12%; native longest exact shared: 14 bp (GAAGATTACGACGT)
+  internal repeat: (10, 'TTCTGTCAAA', [242, 897])
+  inverted repeat approx: (0, '', 0, 0, 0)
+  type IIS hits: [('BtgZI', 'CATCGC', 21, 26), ('FokI', 'CATCC', 933, 937), ('FokI', 'CATCC', 1041, 1045)]
+  common restriction hits: [('SacI', 'GAGCTC', 70, 75), ('SalI', 'GTCGAC', 586, 591)]
+  polyA/T motif hits: [('AATAAA_polyA', 'AATAAA', 288, 293)]
+
+ISC1gamma
+  length: 1269 bp; GC: 46.1%; translation exact: True; starts ATG: False; ends TAA: True; internal stops: False
+  GC50 min/max: {'min_gc': 32.0, 'min_pos': (244, 293), 'max_gc': 60.0, 'max_pos': (294, 343)}
+  GC100 min/max: {'min_gc': 37.0, 'min_pos': (932, 1031), 'max_gc': 55.00000000000001, 'max_pos': (539, 638)}
+  longest homopolymer: ('A', 5, 1262, 1266)
+  native identity: 75.12%; native longest exact shared: 20 bp (ATCGAAGTCGAACAAGAGGT)
+  internal repeat: (10, 'TCCTGAATAC', [356, 689])
+  inverted repeat approx: (0, '', 0, 0, 0)
+  type IIS hits: [('BtgZI', 'CATCGC', 342, 347), ('FokI', 'GGATG', 720, 724), ('FokI', 'GGATG', 1096, 1100), ('FokI', 'CATCC', 975, 979)]
+  common restriction hits: [('SacI', 'GAGCTC', 1101, 1106), ('PstI', 'CTGCAG', 766, 771), ('PstI', 'CTGCAG', 1243, 1248), ('NheI', 'GCTAGC', 166, 171)]
+  polyA/T motif hits: []
+
+PAIRWISE COMPARISONS
+  ISC1alpha vs ISC1beta: identity 64.38%; longest exact shared 9 bp (CAACGTCAG)
+  ISC1alpha vs ISC1gamma: identity 64.3%; longest exact shared 10 bp (ATACATACCT)
+  ISC1beta vs ISC1gamma: identity 64.22%; longest exact shared 11 bp (GAAGATTGGAA)
+  OCH1_donor vs MNN2_donor: identity 48.06%; longest exact shared 32 bp (GGTGGTGGTGGTTCTGGTGGTGGTGGTTCTAG)
+  OCH1_donor vs MNN5_donor: identity 48.8%; longest exact shared 30 bp (GGTGGTGGTGGTTCTGGTGGTGGTGGTTCT)
+  MNN2_donor vs MNN5_donor: identity 48.46%; longest exact shared 30 bp (GGTGGTGGTGGTTCTGGTGGTGGTGGTTCT)
+
+DONOR SUMMARY
+
+OCH1_donor
+  length: 2299 bp; GC: 42.11%
+  linker at 501-530: True; payload at 531-1799: True; stop at 1797-1799: True; 5p arm ends with retained native anchor: True
+  GC50 min/max: {'min_gc': 14.000000000000002, 'min_pos': (2062, 2111), 'max_gc': 62.0, 'max_pos': (59, 108)}
+  GC100 min/max: {'min_gc': 22.0, 'min_pos': (2062, 2161), 'max_gc': 53.0, 'max_pos': (897, 996)}
+  longest homopolymer: ('T', 6, 31, 36)
+  internal repeat: (15, 'GGTGGTGGTGGTTCT', [501, 516])
+  inverted repeat approx: (0, '', 0, 0, 0)
+  type IIS hits: [('FokI', 'GGATG', 1197, 1201), ('FokI', 'GGATG', 1757, 1761), ('FokI', 'CATCC', 253, 257)]
+  common restriction hits: [('HindIII', 'AAGCTT', 988, 993), ('HindIII', 'AAGCTT', 2144, 2149), ('XbaI', 'TCTAGA', 528, 533), ('XbaI', 'TCTAGA', 1002, 1007), ('XbaI', 'TCTAGA', 1413, 1418), ('KpnI', 'GGTACC', 782, 787), ('KpnI', 'GGTACC', 897, 902), ('PstI', 'CTGCAG', 1179, 1184), ('PstI', 'CTGCAG', 1994, 1999)]
+  polyA/T motif hits: [('AATAAA_polyA', 'AATAAA', 1830, 1835), ('AATAAA_polyA', 'AATAAA', 1898, 1903), ('AATAAA_polyA', 'AATAAA', 2233, 2238), ('TTTTTT', 'TTTTTT', 31, 36), ('TTTTTT', 'TTTTTT', 1292, 1297), ('TTTTTT', 'TTTTTT', 2272, 2277)]
+
+MNN2_donor
+  length: 2299 bp; GC: 42.24%
+  linker at 501-530: True; payload at 531-1799: True; stop at 1797-1799: True; 5p arm ends with retained native anchor: True
+  GC50 min/max: {'min_gc': 14.000000000000002, 'min_pos': (194, 243), 'max_gc': 60.0, 'max_pos': (507, 556)}
+  GC100 min/max: {'min_gc': 23.0, 'min_pos': (1843, 1942), 'max_gc': 56.99999999999999, 'max_pos': (474, 573)}
+  longest homopolymer: ('A', 10, 211, 220)
+  internal repeat: (15, 'GGTGGTGGTGGTTCT', [501, 516])
+  inverted repeat approx: (0, '', 0, 0, 0)
+  type IIS hits: [('BtgZI', 'CATCGC', 551, 556), ('FokI', 'GGATG', 177, 181), ('FokI', 'GGATG', 470, 474), ('FokI', 'CATCC', 1463, 1467), ('FokI', 'CATCC', 1571, 1575)]
+  common restriction hits: [('EcoRI', 'GAATTC', 2256, 2261), ('SacI', 'GAGCTC', 600, 605), ('SalI', 'GTCGAC', 1116, 1121), ('NheI', 'GCTAGC', 2266, 2271)]
+  polyA/T motif hits: [('AATAAA_polyA', 'AATAAA', 238, 243), ('AATAAA_polyA', 'AATAAA', 818, 823), ('AATAAA_polyA', 'AATAAA', 2026, 2031), ('AATAAA_polyA', 'AATAAA', 2096, 2101), ('TTTTTT', 'TTTTTT', 1906, 1911), ('TTTTTT', 'TTTTTT', 2242, 2247), ('AAAAAA', 'AAAAAA', 150, 155), ('AAAAAA', 'AAAAAA', 194, 199), ('AAAAAA', 'AAAAAA', 211, 216), ('AAAAAA', 'AAAAAA', 212, 217), ('AAAAAA', 'AAAAAA', 213, 218), ('AAAAAA', 'AAAAAA', 214, 219), ('AAAAAA', 'AAAAAA', 215, 220), ('AAAAAA', 'AAAAAA', 2020, 2025), ('AAAAAA', 'AAAAAA', 2021, 2026), ('AAAAAA', 'AAAAAA', 2022, 2027), ('AAAAAA', 'AAAAAA', 2104, 2109)]
+
+MNN5_donor
+  length: 2299 bp; GC: 42.45%
+  linker at 501-530: True; payload at 531-1799: True; stop at 1797-1799: True; 5p arm ends with retained native anchor: True
+  GC50 min/max: {'min_gc': 16.0, 'min_pos': (1781, 1830), 'max_gc': 60.0, 'max_pos': (824, 873)}
+  GC100 min/max: {'min_gc': 25.0, 'min_pos': (1807, 1906), 'max_gc': 56.99999999999999, 'max_pos': (494, 593)}
+  longest homopolymer: ('T', 10, 184, 193)
+  internal repeat: (15, 'TGGTGGTGGTGGTTC', [500, 515])
+  inverted repeat approx: (10, 'TTTTTCCCCG', 164, 208, 34)
+  type IIS hits: [('BbsI', 'GAAGAC', 2046, 2051), ('BbsI', 'GTCTTC', 458, 463), ('BtgZI', 'GCGATG', 2110, 2115), ('BtgZI', 'CATCGC', 872, 877), ('FokI', 'GGATG', 1250, 1254), ('FokI', 'GGATG', 1626, 1630), ('FokI', 'CATCC', 1505, 1509), ('FokI', 'CATCC', 1837, 1841)]
+  common restriction hits: [('EcoRI', 'GAATTC', 2147, 2152), ('HindIII', 'AAGCTT', 483, 488), ('SacI', 'GAGCTC', 1631, 1636), ('PstI', 'CTGCAG', 396, 401), ('PstI', 'CTGCAG', 1296, 1301), ('PstI', 'CTGCAG', 1773, 1778), ('NheI', 'GCTAGC', 696, 701)]
+  polyA/T motif hits: [('AATAAA_polyA', 'AATAAA', 33, 38), ('AATAAA_polyA', 'AATAAA', 2177, 2182), ('TTTTTT', 'TTTTTT', 184, 189), ('TTTTTT', 'TTTTTT', 185, 190), ('TTTTTT', 'TTTTTT', 186, 191), ('TTTTTT', 'TTTTTT', 187, 192), ('TTTTTT', 'TTTTTT', 188, 193), ('TTTTTT', 'TTTTTT', 432, 437), ('TTTTTT', 'TTTTTT', 433, 438), ('AAAAAA', 'AAAAAA', 213, 218), ('AAAAAA', 'AAAAAA', 214, 219), ('AAAAAA', 'AAAAAA', 215, 220), ('AAAAAA', 'AAAAAA', 278, 283), ('AAAAAA', 'AAAAAA', 1896, 1901), ('AAAAAA', 'AAAAAA', 1897, 1902), ('AAAAAA', 'AAAAAA', 1905, 1910), ('AAAAAA', 'AAAAAA', 1921, 1926), ('AAAAAA', 'AAAAAA', 2196, 2201)]
+
+INTERPRETATION NOTES
+- Type IIS/common restriction sites inside donor arms may matter only if that enzyme is used for cloning/assembly. If the entire donor is ordered as a synthetic fragment for HDR, they may not be blockers.
+- PolyA/T motif hits are warnings only; yeast termination is context-dependent. Vendor synthesis review is still required.
+- Identical (GGGGS)2 linker creates a deliberate 30 bp shared block among donors; not a concern by itself but should be annotated.
+- Pairwise payload identities meet the current <65% draft target, but native ISC1 similarity remains ~74-75% because the protein is identical.

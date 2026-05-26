@@ -1,0 +1,45 @@
+Final Three-Lock Donor Cassette Documentation Summary
+
+Status
+------
+These files document computationally validated donor candidates for the three-lock design. They are ready for vendor feasibility review, not experimental use or claims of biological validation.
+
+Constructs
+----------
+1. OCH1_ISC1alpha_500bp_HDR_donor
+2. MNN2_ISC1beta_500bp_HDR_donor
+3. MNN5_ISC1gamma_500bp_HDR_donor
+
+Final Architecture
+------------------
+Each donor cassette is 2,299 bp in transcript/synthesis orientation:
+500 bp 5' homology arm + 30 bp (GGGGS)2 linker + 1,269 bp diversified ISC1 payload including TAA + 500 bp 3' homology arm.
+
+The retained native Golgi anchor is already included at the 3' terminus of the 5' homology arm. It is not duplicated as a separate payload block.
+
+Source Identity
+---------------
+- Target loci: OCH1/YGL038C (ChrVII), MNN2/YBR015C (ChrII), MNN5/YJL186W (ChrX), S. cerevisiae S288C / R64-1-1.
+- Payload source: ISC1/YER019W (ChrV:192797..194230), using the aa56-477 catalytic-domain protein target.
+- Excluded: YOR019W, SIC1, LCB3/YJL134W branch, old 50 bp lock cassettes.
+
+Translation / Frame Validation
+------------------------------
+The intended coding regions passed translation validation:
+- OCH1 anchor + linker + ISC1alpha + TAA: 1,434 bp; 477 aa + terminal stop.
+- MNN2 anchor + linker + ISC1beta + TAA: 1,422 bp; 473 aa + terminal stop.
+- MNN5 anchor + linker + ISC1gamma + TAA: 1,434 bp; 477 aa + terminal stop.
+No internal premature stops were detected in the intended coding frame, and the linker is in-frame.
+
+Screening Summary
+-----------------
+- Overall GC content: approximately 42% for the full donor cassettes.
+- Low-GC windows occur in native arms; this is retained because the arms are genomic homology regions.
+- Homopolymer flags occur mainly in native arms, especially MNN2 and MNN5.
+- No BsaI/BsmBI/Esp3I/SapI/AarI sites were flagged in the current summary.
+- MNN5 contains BbsI sites in the current cassette, so avoid BbsI Golden Gate unless the donor is domesticated.
+- Direct synthesized HDR donor cassettes are the preferred assembly strategy. Gibson/HiFi is preferred if plasmid cloning is required.
+
+Final Caveat
+------------
+These constructs are computationally validated sequence candidates. Vendor synthesis acceptance, manufacturability review, and any experimental confirmation by colony PCR, junction PCR, and Sanger/NGS remain outside this documentation package.

@@ -1,0 +1,7 @@
+category,sequence,length_bp,gc_pct,translation_exact,starts_ATG,ends_TAA,internal_stops,linker_ok,payload_ok,stop_ok,anchor_ok,typeiis_hit_count,common_re_hit_count,motif_hit_count,longest_homopolymer_base,longest_homopolymer_len,internal_repeat_len,inverted_repeat_arm_len,native_identity_pct,native_longest_shared_bp
+payload,ISC1alpha,1269,45.47,True,False,True,False,,,,,2,6,1,T,6,9,0,73.62,14
+payload,ISC1beta,1269,46.34,True,False,True,False,,,,,3,2,1,T,5,10,0,75.12,14
+payload,ISC1gamma,1269,46.1,True,False,True,False,,,,,4,4,0,A,5,10,0,75.12,20
+donor,OCH1_donor,2299,42.11,,,,,True,True,True,True,3,9,6,T,6,15,0,,
+donor,MNN2_donor,2299,42.24,,,,,True,True,True,True,5,4,17,A,10,15,0,,
+donor,MNN5_donor,2299,42.45,,,,,True,True,True,True,8,7,18,T,10,15,10,,
